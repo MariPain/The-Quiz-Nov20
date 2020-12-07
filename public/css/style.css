@@ -1,30 +1,67 @@
-    body {
-        background-color: yellow;
-    }
-    
-    legend {
-        color: rgb(75, 11, 75);
-        background-color: rgb(211, 163, 163);
-        border: solid 5px black;
-        padding: 70px;
-        margin: 20px;
-    }
-    
-    label {
-        color: rgb(211, 163, 163);
-        background-color: rgb(75, 11, 75);
-        border: solid 5px black;
-        padding: 30px;
-        margin: 20px;
-    }
-    
-    input {}
-    
-    form label:hover {
-        cursor: pointer;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-    }
+body {
+    background-color: yellow;
+    font-family: 'Karla', sans-serif;
+}
+
+form {
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    background-color: rgb(233, 208, 208);
+    border: solid 5px black;
+    padding: 70px;
+    margin: 20px;
+}
+
+label {
+    color: rgb(233, 208, 208);
+    background-color: rgb(107, 28, 107);
+    border: solid 5px black;
+    padding: 30px;
+    margin: 20px;
+}
+
+#btn {
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(211, 163, 187);
+    background-color: rgb(236, 13, 162);
+    border: solid 5px black;
+    padding: 30px;
+    margin: 20px;
+}
+
+input {
+    display: none;
+}
+
+.opcion:hover {
+    cursor: pointer;
+    background-color: rgb(216, 93, 179);
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: rgb(233, 208, 208);
+    color: rgb(75, 11, 75);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {}
+
+
+/* Aplicaremos nuestro primer punto de ruptura para el diseño de tablet,
+y aplicaremos las reglas propias de esta vista. Será a partir de 768px. */
+
+@media screen and (min-width: 768px) {}
+
+
+/* El tercero, y último punto de ruptura será para el escritorio. A partir de 1366px.Como pequeña ayuda, has de saber que el diseño es el mismo que para tablet. */
+
+@media screen and (min-width: 1366px) {}

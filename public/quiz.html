@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap" rel="stylesheet">
     <title>PREGUNTAS</title>
 </head>
 
 <body>
     <form action="" method="post">
         <legend>Pregunta impresa</legend>
-        <label for="bard-field">Respuesta impresa primera</label>
+        <label for="bard-field" class="opcion">Respuesta impresa primera</label>
         <input id="bard-field" type="radio" name="elminster" value="bardo">
 
-        <label for="merchant-field">Respuesta impresa segunda</label>
+        <label for="merchant-field" class="opcion">Respuesta impresa segunda</label>
         <input id="merchant-field" type="radio" name="elminster" value="mercader">
 
-        <label for="sorcerer-field">Respuesta impresa tercera</label>
+        <label for="sorcerer-field" class="opcion">Respuesta impresa tercera</label>
         <input id="sorcerer-field" type="radio" name="elminster" value="mago">
 
-        <label for="sailor-field">Respuesta impresa cuarta</label>
+        <label for="sailor-field" class="opcion">Respuesta impresa cuarta</label>
         <input id="sailor-field" type="radio" name="elminster" value="marinero">
-        <button type="submit">Comprobar datos</button>
+        <button type="submit" id="btn">Comprobar datos</button>
         <!--aplicar event default para no enviar y solo comprobar?-->
 
     </form>
