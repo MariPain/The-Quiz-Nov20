@@ -1,0 +1,30 @@
+    body {
+        background-color: yellow;
+    }
+    
+    legend {
+        color: rgb(75, 11, 75);
+        background-color: rgb(211, 163, 163);
+        border: solid 5px black;
+        padding: 70px;
+        margin: 20px;
+    }
+    
+    label {
+        color: rgb(211, 163, 163);
+        background-color: rgb(75, 11, 75);
+        border: solid 5px black;
+        padding: 30px;
+        margin: 20px;
+    }
+    
+    input {}
+    
+    form label:hover {
+        cursor: pointer;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
