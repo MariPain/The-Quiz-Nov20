@@ -1,74 +1,102 @@
-          body {
-              background-color: yellow;
-              font-family: 'Karla', sans-serif;
-          }
-          
-          form {
-              width: 100%;
-          }
-          
-          legend {
-              text-align: center;
-              font-size: larger;
-              font-weight: bold;
-              background-color: rgb(233, 208, 208);
-              border: solid 5px black;
-              padding: 70px;
-              margin: 20px;
-          }
-          
-          label {
-              text-align: center;
-              color: rgb(233, 208, 208);
-              background-color: rgb(107, 28, 107);
-              border: solid 5px black;
-              padding: 30px;
-              margin: 20px;
-          }
-          
-          #btn {
-              text-align: center;
-              font-size: larger;
-              font-weight: bold;
-              color: rgb(211, 163, 187);
-              background-color: rgb(236, 13, 162);
-              border: solid 5px black;
-              padding: 30px;
-              margin: 20px;
-          }
-          
-          input {
-              display: none;
-          }
-          
-          .opcion:hover {
-              cursor: pointer;
-              background-color: rgb(216, 93, 179);
-          }
-          
-          #btn:hover {
-              cursor: pointer;
-              background-color: rgb(233, 208, 208);
-              color: rgb(75, 11, 75);
-          }
-          
-          form {
-              display: flex;
-              flex-direction: column;
-          }
-          
-          @media screen and (min-width: 480px) {
-              form {}
-          }
-          /* Aplicaremos nuestro primer punto de ruptura para el diseño de tablet,
+              body {
+                  background-color: yellow;
+                  font-family: 'Karla', sans-serif;
+              }
+              
+              form {
+                  width: 100%;
+              }
+              
+              legend {
+                  text-align: center;
+                  font-size: larger;
+                  font-weight: bold;
+                  background-color: rgb(233, 208, 208);
+                  border: solid 5px black;
+                  border-radius: 10px;
+                  padding: 70px;
+                  margin: 20px;
+              }
+              
+              label {
+                  text-align: center;
+                  color: rgb(233, 208, 208);
+                  background-color: rgb(107, 28, 107);
+                  border: solid 5px black;
+                  border-radius: 10px;
+                  padding: 30px;
+                  margin: 20px;
+              }
+              
+              #btn {
+                  text-align: center;
+                  font-size: larger;
+                  font-weight: bold;
+                  color: rgb(211, 163, 187);
+                  background-color: rgb(236, 13, 162);
+                  border: solid 5px black;
+                  border-radius: 10px;
+                  padding: 30px;
+                  margin: 20px;
+              }
+              
+              input {
+                  display: none;
+              }
+              
+              input[type="radio"]:checked+label {
+                  background-color: rgb(236, 13, 162);
+              }
+              
+              .opcion:hover {
+                  cursor: pointer;
+                  background-color: rgb(216, 93, 179);
+              }
+              
+              #btn:hover {
+                  cursor: pointer;
+                  background-color: rgb(233, 208, 208);
+                  color: rgb(75, 11, 75);
+              }
+              
+              form {
+                  display: flex;
+                  flex-direction: column;
+              }
+              
+              @media screen and (min-width: 480px) {}
+              /* Aplicaremos nuestro primer punto de ruptura para el diseño de tablet,
 y aplicaremos las reglas propias de esta vista. Será a partir de 768px. */
-          
-          @media screen and (min-width: 768px) {
-              form {}
-              label {}
-          }
-          /* El tercero, y último punto de ruptura será para el escritorio. A partir de 1366px.Como pequeña ayuda, has de saber que el diseño es el mismo que para tablet. */
-          
-          @media screen and (min-width: 1366px) {
-              form {}
-          }
+              
+              @media screen and (min-width: 768px) {
+                  form {
+                      flex-flow: row wrap;
+                      justify-content: center;
+                  }
+                  label {
+                      width: 25%;
+                  }
+                  legend {
+                      width: 100%;
+                  }
+                  #btn {
+                      width: 100%;
+                  }
+              }
+              /* El tercero, y último punto de ruptura será para el escritorio. A partir de 1366px.Como pequeña ayuda, has de saber que el diseño es el mismo que para tablet. */
+              
+              @media screen and (min-width: 1366px) {
+                  form {
+                      flex-flow: row wrap;
+                      justify-content: center;
+                  }
+                  label {
+                      width: 30%;
+                  }
+                  legend {
+                      width: 100%;
+                  }
+                  #btn {
+                      width: 70%;
+                  }
+              }
