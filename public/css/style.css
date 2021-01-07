@@ -48,7 +48,7 @@
                   background-color: rgb(236, 13, 162);
               }
               
-              .opcion:hover {
+              label:hover {
                   cursor: pointer;
                   background-color: rgb(216, 93, 179);
               }
